@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFService", "WCFService\WCFService.csproj", "{8B8D2417-2DEC-4BF3-AAB1-241E284FECE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_双工_Server", "WCF_Duplexing_Server\WCF_双工_Server.csproj", "{EFF86712-99E8-44F2-80CD-8CFA42009638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_双工_Client", "WCF_Duplexing_Client\WCF_双工_Client.csproj", "{5704AB7F-E59D-4A8F-B23C-71A228ECEB9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B8D2417-2DEC-4BF3-AAB1-241E284FECE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B8D2417-2DEC-4BF3-AAB1-241E284FECE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B8D2417-2DEC-4BF3-AAB1-241E284FECE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B8D2417-2DEC-4BF3-AAB1-241E284FECE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF86712-99E8-44F2-80CD-8CFA42009638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF86712-99E8-44F2-80CD-8CFA42009638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF86712-99E8-44F2-80CD-8CFA42009638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF86712-99E8-44F2-80CD-8CFA42009638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5704AB7F-E59D-4A8F-B23C-71A228ECEB9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5704AB7F-E59D-4A8F-B23C-71A228ECEB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5704AB7F-E59D-4A8F-B23C-71A228ECEB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5704AB7F-E59D-4A8F-B23C-71A228ECEB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A0D1BF8-03A2-4226-BAB9-F4AD09CC6DEF}
+	EndGlobalSection
+EndGlobal

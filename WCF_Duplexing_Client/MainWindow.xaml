@@ -1,0 +1,46 @@
+﻿<Window x:Class="WCF_双工_Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Client" Height="350" Width="720" Loaded="Window_Loaded" Closed="Window_Closed" Icon="Icon/chat_177px_1201536_easyicon.net.png">
+    <Grid>
+        <Frame Name="loadingFrame" Visibility="Visible"></Frame>
+        <Grid Name="mainGrid" Visibility="Collapsed">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Grid.RowSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition Height="40">
+                    </RowDefinition>
+                    <RowDefinition Height="50">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <RichTextBox Name="richTextBox" IsReadOnly="True" ScrollViewer.CanContentScroll="True"/>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="5">
+                    <TextBox Name="tb_preChat"  Width="400"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                    <Button  Name="btn_SendMsg" Width="70" Click="btn_SendMsg_Click">发送文字</Button>
+                    <Button  Name="btn_SendImage" Width="70" Click="btn_SendImage_Click">传送文件</Button>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Width="542">
+                    <RadioButton  Height="20" Name="allRb" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ClickMode="Press" Content="对所有好友发送" Margin="150,0,0,0" />
+                    <RadioButton Height="20" Name="singleRb" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ClickMode="Press" Content="对单个好友发送" Margin="50,0,0,0"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.RowSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" Foreground="Blue">在线好友</Label>
+                <ListBox Grid.Row="1" Name="listBox" FontSize="16" FontWeight="Black" SelectionMode="Single"></ListBox>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
